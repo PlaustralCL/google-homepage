@@ -1,0 +1,18 @@
+<svg version="1.1"
+     baseProfile="full"
+     width="20" height="20"
+     xmlns="http://www.w3.org/2000/svg">
+
+      <circle cx="4" cy="4" r="1.25" stroke="black" stroke-width="1" fill="gray" />
+      <circle cx="10" cy="4" r="1.25" stroke="black" stroke-width="1" fill="gray" />
+      <circle cx="16" cy="4" r="1.25" stroke="black" stroke-width="1" fill="gray" />
+      
+      <circle cx="4" cy="10" r="1.25" stroke="black" stroke-width="1" fill="gray" />
+      <circle cx="10" cy="10" r="1.25" stroke="black" stroke-width="1" fill="gray" />
+      <circle cx="16" cy="10" r="1.25" stroke="black" stroke-width="1" fill="gray" />
+      
+      <circle cx="4" cy="16" r="1.25" stroke="black" stroke-width="1" fill="gray" />
+      <circle cx="10" cy="16" r="1.25" stroke="black" stroke-width="1" fill="gray" />
+      <circle cx="16" cy="16" r="1.25" stroke="black" stroke-width="1" fill="gray" />
+
+</svg>
