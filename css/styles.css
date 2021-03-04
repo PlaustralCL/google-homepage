@@ -59,20 +59,44 @@ body {
 }
 
 .nav-right {
-  grid-area: nav-right;  
+  grid-area: nav-right; 
+  align-self: end; 
+  justify-self: end;
   background-color: lightseagreen;
+  padding-top: 20px;
 }
 
-.nav__circle {
-  height: 40px;
-  width: 40px;
-  background-color:rgb(119, 119, 201);
-  border-radius: 50%;
+.grid-right {
+  display: grid;
+  grid-template-columns: 2fr 30px 50px;
+  grid-template-areas: "text dots circle";
+  align-self: center;
+  column-gap: 5px;
   
 }
 
+.nav__circle {
+  grid-area: circle;
+  height: 35px;
+  width: 35px;
+  background-color:rgb(119, 119, 201);
+  border-radius: 50%;
+  
+  
+}
+
+.text {
+  grid-area: text;
+  border-style: dashed;
+  background-color: gray;
+}
 .nav__img {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  grid-area: dots;
+  background-color: pink;
 
 }
 .nav__ul {
