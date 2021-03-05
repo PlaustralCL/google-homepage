@@ -39,18 +39,28 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 60vh;
   width: 100vw;
 }
 
-/* Style the input container */
 .input-container {
   position: relative;
   width: fit-content;
   margin-bottom: 15px;
+  margin-top: 30px;
 }
 
-/* Style the form icons */
+.input-field {
+  position: relative;
+  width: 575px;
+  height: 45px;
+  padding: 10px 40px;
+  border-style: solid;
+  border-color: lightgray;
+  border-radius: 25px;
+  border-width: 1px;
+  }
+
 .icon--leading {
   position: absolute; 
   left: 10px; 
@@ -63,19 +73,6 @@
   right: 10px; 
   top: 8px;  
 }
-  
-  /* Style the input fields */
-.input-field {
-  position: relative;
-  width: 300px%;
-  padding: 10px 40px;
-  outline: none;
-  border-color: lightgray;
-  border-radius: 20px;
-}
-
-
-
 
 /* ===Footer=== */
 .foot {
