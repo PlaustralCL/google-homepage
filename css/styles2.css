@@ -5,6 +5,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* ===Navbar=== */
 .hnav { 
   list-style-type: none;
   padding: 0;  
@@ -30,4 +31,17 @@
 .circle {
   position: relative;
   top: -10px;    
+}
+
+
+
+
+
+/* ===Footer=== */
+.foot {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  padding-bottom: 10px;
 }
