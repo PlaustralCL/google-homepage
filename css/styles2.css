@@ -11,7 +11,7 @@
 */
 
 .body {
-  padding-top: 10px;
+  padding-top: 15px;
   overflow-x: hidden;
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -60,7 +60,24 @@
 
 .circle {
   position: relative;
-  top: -10px;    
+  top: -18px;    
+}
+
+.btn--sign-in {
+  position: relative;
+  top: -8px;
+  box-shadow: none;
+  height: 30px;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background-color: #4387fd;
+  border-style: none;
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
 }
 
 /* ===Main=== */
@@ -98,8 +115,8 @@
 .icon--leading {
   position: absolute; 
   left: 10px; 
-  top: 8px;  
-  color: lightgray;
+  top: 12px;  
+  color: #9c9c9c;
 }
 
 .icon--trailing {
@@ -153,6 +170,7 @@
 
 /* Rules for sizing the icon. */
 .material-icons.md-18 { font-size: 18px; }
+.material-icons.md-20 { font-size: 20px; }
 .material-icons.md-24 { font-size: 24px; }
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }

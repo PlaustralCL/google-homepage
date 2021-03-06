@@ -18,13 +18,17 @@
   </head>
   
   <body class="body">
-    
+    <!-- Header -->
     <nav class="nav">
       <ul class="hnav">
+        <!-- Left side -->
         <li class="hnav__li"><a class="hnav__link" href="#">About</a></li>
-        <li class="hnav__li"><a class="hnav__link" href="#">Store</a></li>  
-        <li class="hnav__li hnav__li--r"><a class="hnav__link" href="#">
-            <img class="circle" src="images/circle.svg" alt="circle"></a></li>      
+        <li class="hnav__li"><a class="hnav__link" href="#">Store</a></li> 
+        
+        <!-- Right side -->
+        <!-- <li class="hnav__li hnav__li--r"><a class="hnav__link" href="#">
+            <img class="circle" src="images/circle.svg" alt="circle"></a></li>       -->
+        <li class="hnav__li hnav__li--r"><button class="btn--sign-in">Sign in</button></li>
         <li class="hnav__li hnav__li--r"><a class="hnav__link" href="#">
             <img class="grid" src="images/grid.svg" alt="grid"></a></li>
         <li class="hnav__li hnav__li--r"><a class="hnav__link" href="#">Images</a></li>
@@ -32,6 +36,7 @@
       </ul>
     </nav>
     
+    <!-- Main section with search and logo -->
     <main>
       <div class="flex-container--col">
         <img src="images/googlelogo.png" alt="Google logo" 
@@ -39,8 +44,8 @@
 
         <form action="http://google.com/search" target="_blank" method="get">
           <div class="input-container">
-            <input class="input-field" type="search" name="q" placeholder="Search" autofocus>
-            <i class="icon--leading material-icons md-24 ">search</i>
+            <input class="input-field" type="search" name="q" autofocus>
+            <i class="icon--leading material-icons md-20 ">search</i>
           </div>
 
           <div class="flex-container--row">
