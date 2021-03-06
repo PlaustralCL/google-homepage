@@ -21,6 +21,9 @@
 
 /* ===Navbar in Header and Footer === */
 .nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   color: black;
   font-size: 13px;
 }
@@ -192,8 +195,12 @@
   width: 0;
 }
 
-.hide {
+.hide--lg {
   display: none;
+}
+
+.hide--sm {
+  display: inline;
 }
 
 @media (max-width: 768px) {
@@ -209,6 +216,10 @@
   .hide--lg {
   display: inline;
   }
+
+  .hide--sm {
+    display: none;
+    }
 }
 /* ===Google Font Settings=== */
 
