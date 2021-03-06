@@ -235,6 +235,8 @@
 }
 
 /* ===Google Font Settings=== */
+/* Information on using Google material design fonts: 
+    https://google.github.io/material-design-icons/ */
 
 /* Rules for sizing the icon. */
 .material-icons.md-18 { font-size: 18px; }
