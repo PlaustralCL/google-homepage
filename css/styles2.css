@@ -16,7 +16,7 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* ===Navbar=== */
+/* ===Navbar in Header and Footer === */
 .nav {
   color: black;
   font-size: 13px;
@@ -37,6 +37,20 @@
 .hnav__li--r {
   float: right;
   padding-left: 15px;   
+}
+
+.hnav__link:link {
+  color: black;
+  text-decoration: none;
+}
+
+.hnav__link--light:link {
+  color: #5f6368;
+  text-decoration: none;
+}
+
+.hnav__link:hover {
+  text-decoration: underline;
 }
 
 .grid {
