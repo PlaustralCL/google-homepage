@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <!-- Reference Google page:
+        https://web.archive.org/web/20191130234759if_/https://www.google.com/ -->
+    
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Homepage</title>
+    <!-- Google Icon font -->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+    
+    <!-- Favicon -->
+      <!-- Google favicon from IconFinder
+        https://www.iconfinder.com/icons/682665/favicon_google_logo_new_icon -->
+      <link rel="icon" href="google-favicon.ico" type="image/x-icon">
+
+    <!-- Stye Sheet-->    
+    <link rel="stylesheet" href="css/styles.css" media="screen">
+  </head>
+  
+  <body class="body">
+    <!-- Header -->
+    <nav class="nav">
+      <ul class="hnav">
+        <!-- Left side -->
+        <li class="hide--sm hnav__li"><a class="hnav__link" href="#">About</a></li>
+        <li class="hide--sm hnav__li"><a class="hnav__link" href="#">Store</a></li> 
+      </ul>
+      
+      <ul class="hnav">
+        <li class="hide--sm hnav__li hnav__li--r"><a class="hnav__link" href="#">Gmail</a></li>
+        <li class="hide--sm hnav__li hnav__li--r"><a class="hnav__link" href="#">Images</a></li>
+        <li class="hnav__li"><a class="hnav__link" href="#">
+          <img class="grid" src="images/grid.svg" alt="grid"></a></li>
+        <li class="hnav__li"><button class="btn--sign-in">Sign in</button></li>
+      </ul>
+    </nav>
+    
+    <!-- Main section with search and logo -->
+    <main>
+      <div class="flex-container--col">
+        <img src="images/googlelogo.png" alt="Google logo" 
+            height="92px" width="272px">
+
+        <form action="http://google.com/search" target="_blank" method="get">
+          <div class="input-container">
+            <input class="input-field" type="search" name="q" autofocus>
+            <i class="icon--leading material-icons md-20 ">search</i>
+          </div>
+
+          <div class="flex-container--row">
+            <button class="btn">Google Search</button>
+            <button class="btn">I'm Feeling Lucky</button>
+          </div>
+       </form>
+      </div>
+    </main>
+
+    <footer class="foot">
+      <ul class="hnav">
+        <li class="hnav__li"><a class="hnav__link hnav__link--light" href="#">Advertising</a></li>
+        <li class="hnav__li"><a class="hnav__link hnav__link--light" href="#">Business</a></li>  
+        <li class="hide--vsm hnav__li"><a class="hnav__link hnav__link--light" href="#">How Search Works</li>
+          
+      </ul>
+      <div class="break"></div>
+      <ul class="hnav">
+        <li class="hnav__li"><a class="hnav__link hnav__link--light" href="#">Privacy</a></li>
+        <li class="hnav__li"><a class="hnav__link hnav__link--light" href="#">Terms</a></li>
+        <li class="hnav__li"><a class="hnav__link hnav__link--light" href="#">Settings</a></li>
+        <li class="hide--lg hnav__li"><a class="hnav__link hnav__link--light" href="#">About</a></li>
+      </ul>
+    </footer>
+    
+  </body>
+</html>
