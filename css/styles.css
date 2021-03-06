@@ -1,149 +1,243 @@
-/* CSS for Google Homepage project */
+/* Second styles for Google homepage */
 
-/* ===Design Information===
+/* ===Design Information 
+
   Colors
-
+    Header text - black
+    Footer and button text - #5f6368
+    Footer and button background color - #f2f2f2
+    Input field hover - lilghtgrey
+    Sign-in button - blue
 
   Fonts
-
+    Everything - Arial, Helvetica, sans-serif
 */
 
-/* ===Reset=== */
-/* Inspired by modern-csss-reset, https://github.com/hankchizljaw/modern-css-reset */
-
-
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}
-
-/* ===Default Font that is not Times New Roman=== */
-body {
-  padding: 10px;
+.body {
+  padding-top: 15px;
+  overflow-x: hidden;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 5vh 90vh 5vh;
-  grid-template-areas: 
-      "nav-left . nav-right"
-      ". main ."
-      "footer-left . footer-right";
-
+/* ===Navbar in Header and Footer === */
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: black;
+  font-size: 13px;
 }
 
-/* ===Nav Bar=== */
-.nav-left {
-  grid-area: nav-left;   
-  align-self: end;
-  padding-left: 20px;  
+.hnav { 
+  list-style-type: none;
+  padding: 0;  
+  margin: 0; 
 }
 
-.nav-right {
-  grid-area: nav-right; 
-  align-self: end; 
-  justify-self: end;
-  background-color: lightseagreen;
-  padding-top: 20px;
-}
-
-.grid-right {
-  display: grid;
-  grid-template-columns: 2fr 30px 50px;
-  grid-template-areas: "text dots circle";
-  align-self: center;
-  column-gap: 5px;
-  
-}
-
-.nav__circle {
-  grid-area: circle;
-  height: 35px;
-  width: 35px;
-  background-color:rgb(119, 119, 201);
-  border-radius: 50%;
-  
-  
-}
-
-.text {
-  grid-area: text;
-  border-style: dashed;
-  background-color: gray;
-}
-.nav__img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5px;
-  grid-area: dots;
-  background-color: pink;
-
-}
-.nav__ul {
-  width: 30%;   
-  padding: 0;
-  margin: 0;
-  list-style-type: none; 
-}
-
-.nav__li {
+.hnav__li {
   display: inline;
-  padding: 10px 10px 0 0;
+  padding-left: 15px;
+  padding-right: 10px;
 }
 
-.nav__link:link {
+.hnav__li--r {
+  position: relative;
+  top: -8px;
+}
+
+.hnav__link:link {
   color: black;
   text-decoration: none;
 }
 
-.nav__link:hover {
-  color: black;
+.hnav__link--light:link {
+  color: #5f6368;
+  text-decoration: none;
+}
+
+.hnav__link:hover {
   text-decoration: underline;
 }
 
-/* ===Search=== */
-.main {
-  grid-area: main;  
-  place-self: center;
-  background-color: lightblue;
+.grid {
+  position: relative;
+  top: -2px; 
 }
 
-
-
-.footer-left {
-  grid-area: footer-left;
-  background-color: beige;
+.circle {
+  position: relative;
+  top: -18px;    
 }
 
-.footer-right {
-  grid-area: footer-right;
-  background-color:lightcoral;
+/* ===Main=== */
+.flex-container--col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  width: 100vw;
 }
 
+.input-container {
+  position: relative;
+  width: fit-content;
+  margin-bottom: 15px;
+  margin-top: 30px;
+}
 
-/* ===Google Material Design classes for icons=== */
+.input-field {
+  position: relative;
+  width: 575px;
+  height: 45px;
+  padding: 10px 40px;
+  border-style: solid;
+  border-color: lightgray;
+  border-radius: 25px;
+  border-width: 1px; 
+  font-size: 16px;  
+}
+
+@media (max-width: 640px) {
+  .input-field {
+    width: 475px;
+  }
+}
+
+@media (max-width: 544px) {
+  .input-field {
+    width: 300px;
+  }
+}
+
+.input-field:focus {
+  outline: none;
+}
+
+.input-field:hover {
+  box-shadow: 0 0 5px 1px lightgrey;
+}
+
+.icon--leading {
+  position: absolute; 
+  left: 10px; 
+  top: 12px;  
+  color: #9c9c9c;
+}
+
+.icon--trailing {
+  position: absolute; 
+  right: 10px; 
+  top: 8px;  
+}
+
+.flex-container--row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* ===Buttons--- */
+.btn {
+  display: inline-block;
+  height: 36px;
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #f2f2f2;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: none;
+  color: #5f6368;
+  font-size: 14px;
+}
+
+.btn--sign-in {
+  position: relative;
+  top: -8px;
+  box-shadow: none;
+  height: 30px;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+  background-color: #4387fd;
+  border-style: none;
+  border-radius: 2px;
+  font-size: 13px;
+  font-weight: bold;
+  color: white;
+}
+
+/* ===Footer=== */
+.foot {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  color: #5f6368;
+  font-size: 14px;
+}
+
+.break {
+  width: 0;
+}
+
+.hide--lg {
+  display: none;
+}
+
+.hide--sm {
+  display: inline;
+}
+
+.hide--vsm {
+  display: inline;
+}
+
+@media (max-width: 768px) {
+  .foot {
+    height: 40px;
+    padding-bottom: 20px;
+    justify-content: center;    
+  }
+  
+  .break {
+    width: 100vw;
+  }
+  
+  .hide--lg {
+  display: inline;
+  }
+
+  .hide--sm {
+    display: none;
+    }
+}
+
+@media (max-width: 350px) {
+  .hide--vsm {
+    display: none;
+  }
+}
+
+/* ===Google Font Settings=== */
+
 /* Rules for sizing the icon. */
 .material-icons.md-18 { font-size: 18px; }
+.material-icons.md-20 { font-size: 20px; }
 .material-icons.md-24 { font-size: 24px; }
 .material-icons.md-36 { font-size: 36px; }
 .material-icons.md-48 { font-size: 48px; }
