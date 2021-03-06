@@ -180,11 +180,36 @@
   height: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   background-color: #f2f2f2;
   color: #5f6368;
   font-size: 14px;
 }
 
+.break {
+  width: 0;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .foot {
+    height: 40px;
+    justify-content: center;    
+  }
+  
+  .break {
+    width: 100vw;
+  }
+  
+  .hide--lg {
+  display: inline;
+  }
+}
 /* ===Google Font Settings=== */
 
 /* Rules for sizing the icon. */
