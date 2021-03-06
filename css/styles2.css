@@ -5,7 +5,8 @@
   Colors
     Header text - black
     Footer and button text - #5f6368
-    footer and button background color - #f2f2f2
+    Footer and button background color - #f2f2f2
+    Input field hover - lilghtgrey
     Sign-in button - blue
 
   Fonts
@@ -96,6 +97,10 @@
 
 .input-field:focus {
   outline: none;
+}
+
+.input-field:hover {
+  box-shadow: 0 0 5px 1px lightgrey;
 }
 
 .icon--leading {
