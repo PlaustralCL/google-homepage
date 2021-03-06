@@ -88,8 +88,12 @@
   border-style: solid;
   border-color: lightgray;
   border-radius: 25px;
-  border-width: 1px;
+  border-width: 1px;   
   }
+
+.input-field:focus {
+  outline: none;
+}
 
 .icon--leading {
   position: absolute; 
