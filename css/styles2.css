@@ -41,8 +41,8 @@
 }
 
 .hnav__li--r {
-  float: right;
-  padding-left: 15px;   
+  position: relative;
+  top: -8px;
 }
 
 .hnav__link:link {
@@ -203,9 +203,14 @@
   display: inline;
 }
 
+.hide--vsm {
+  display: inline;
+}
+
 @media (max-width: 768px) {
   .foot {
     height: 40px;
+    padding-bottom: 20px;
     justify-content: center;    
   }
   
@@ -221,6 +226,13 @@
     display: none;
     }
 }
+
+@media (max-width: 350px) {
+  .hide--vsm {
+    display: none;
+  }
+}
+
 /* ===Google Font Settings=== */
 
 /* Rules for sizing the icon. */
